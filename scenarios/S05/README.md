@@ -4,11 +4,11 @@
 
 ## Initial configuration
 
-| d<sub>forward</sub> (m) | ψ (°) | δ<sub>0</sub> (m) |
+| d<sub>forward</sub> (m) | d<sub>lateral</sub> (m) | ψ (°) |
 |---|---|---|
-| 4.0 | -30 | -2.3 |
+| 4.1 | -2.3 | -30 |
 
-The pallet front center is placed on the camera forward axis. d<sub>forward</sub> is the forward distance from the camera to the pallet front, ψ is the pallet yaw, the angle between the fork insertion direction and the camera forward axis (clockwise positive, viewed from above), and δ<sub>0</sub> = d<sub>forward</sub> tan ψ is the lateral offset of the camera from the pallet insertion axis.
+The pallet front center is placed straight ahead of the camera. Distances are measured from the forklift's rotation center c, the center of the tracked base, which lies 0.68 m behind the camera. d<sub>lateral</sub> is the perpendicular distance from c to the pallet insertion axis (the line through the pallet front center along the fork insertion direction); it is positive when c is to the right of the axis, facing the insertion direction. d<sub>forward</sub> is the distance from c to the pallet front, measured along the insertion axis. ψ is the pallet yaw, the angle between the fork insertion direction and the camera forward axis (clockwise positive, viewed from above). When d<sub>lateral</sub> = 0 and ψ = 0, the forklift centerline lies on the insertion axis. Distances are rounded to 0.1 m.
 
 ## Trials
 
