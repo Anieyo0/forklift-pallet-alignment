@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use these videos, please cite them as below."
+title: "Monocular RGB-Based Forklift-Pallet Alignment: Real-World Trial Videos"
+type: dataset
+authors:
+  - family-names: Kim
+    given-names: Jihoon
+  - family-names: Jang
+    given-names: Doyoung
+  - family-names: Kim
+    given-names: Minjae
+  - family-names: Lee
+    given-names: Soonkyo
+  - family-names: Lee
+    given-names: Sangmin
+license: CC-BY-4.0
+repository-code: "https://github.com/Anieyo0/forklift-pallet-alignment"
+url: "https://anieyo0.github.io/forklift-pallet-alignment/"
+date-released: 2026-11-13
+keywords:
+  - forklift
+  - pallet
+  - alignment
+  - monocular vision
+  - robotics

@@ -40,7 +40,7 @@ Thumbnails show the first frame of each video. Click a scenario for its page, or
 |  | [**S09**](scenarios/S09) | 5.0 | -40 | -4.2 | [<img src="scenarios/S09/S09_A.jpg" width="160">](scenarios/S09/S09_A_trajectory.mp4) | [<img src="scenarios/S09/S09_B.jpg" width="160">](scenarios/S09/S09_B_trajectory.mp4) | [<img src="scenarios/S09/S09_C.jpg" width="160">](scenarios/S09/S09_C_trajectory.mp4) |
 
 Each video shows the overhead top-view recording with the tracked forklift trajectory and a scenario label.
-The original recordings without overlay (`SXX_Y.mp4`) are archived on Zenodo: ZENODO_DOI.
+The original recordings without overlay (`SXX_Y.mp4`) will be archived on Zenodo; the link will be added here.
 Audio tracks and file metadata were removed from all videos. People appearing in the videos consented to publication.
 
 ## Repository layout
@@ -50,17 +50,25 @@ Audio tracks and file metadata were removed from all videos. People appearing in
 | `scenarios/SXX/` | Scenario page (`README.md`), the three trial videos (`SXX_Y_trajectory.mp4`, H.264) and their thumbnails |
 | `assets/` | Figures used in this README |
 | `index.html` | Video page served by GitHub Pages |
+| `LICENSE` | CC BY 4.0 license text |
+| `CITATION.cff` | Citation metadata (used by GitHub's "Cite this repository") |
 
 ## License
 
-TODO: choose a license (suggested: CC BY 4.0 for the videos and figures).
+The videos, images and text in this repository are licensed under the
+[Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE).
+You may share and adapt them for any purpose, provided you give appropriate credit.
 
 ## Citation
 
+The paper is in preparation; its citation will be added here after publication.
+Until then, please cite this repository:
+
 ```bibtex
-@article{TODO,
-  title  = {Monocular {RGB}-Based Forklift--Pallet Alignment via Visibility-Constrained Route Planning and Adaptive Motion Timing},
-  author = {Kim, Jihoon and Jang, Doyoung and Kim, Minjae and Lee, Soonkyo and Lee, Sangmin},
-  year   = {TODO}
+@misc{kim2026forkliftvideos,
+  author       = {Kim, Jihoon and Jang, Doyoung and Kim, Minjae and Lee, Soonkyo and Lee, Sangmin},
+  title        = {Monocular {RGB}-Based Forklift--Pallet Alignment: Real-World Trial Videos},
+  year         = {2026},
+  howpublished = {\url{https://github.com/Anieyo0/forklift-pallet-alignment}}
 }
 ```
