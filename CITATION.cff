@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use these videos, please cite them as below."
-title: "Monocular RGB-Based Forklift-Pallet Alignment: Real-World Trial Videos"
+title: "Forklift-Pallet Alignment Using Only a Single RGB Camera: Real-World Trial Videos"
 type: dataset
 authors:
   - family-names: Kim
