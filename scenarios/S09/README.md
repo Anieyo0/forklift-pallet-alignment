@@ -1,18 +1,18 @@
-# S09 — Large group
+# S09 — Large initial offset
 
 [← All scenarios](../../README.md)
 
 ## Initial configuration
 
-| Forward distance to pallet | Pallet yaw | Lateral offset |
+| d<sub>forward</sub> (m) | ψ (°) | δ<sub>0</sub> (m) |
 |---|---|---|
-| 5.0 m | -40° | -4.2 m |
+| 5.0 | -40 | -4.2 |
 
-The pallet front center is placed on the camera forward axis. The lateral offset is the offset of the camera from the pallet insertion axis (forward distance × tan(yaw)). Yaw is measured clockwise from the camera forward axis.
+The pallet front center is placed on the camera forward axis. d<sub>forward</sub> is the forward distance from the camera to the pallet front, ψ is the pallet yaw relative to the camera forward axis, and δ<sub>0</sub> = d<sub>forward</sub> tan ψ is the lateral offset of the camera from the pallet insertion axis.
 
 ## Trials
 
-All three trials completed alignment and fork insertion. Click a thumbnail to open the video.
+All three trials completed alignment and fork insertion. Thumbnails show the first frame of each video; click one to open the video.
 
 | Trial A | Trial B | Trial C |
 |---|---|---|

@@ -14,15 +14,18 @@
   figure { margin: 0; }
   video { width: 100%; background: #000; border-radius: 4px; }
   figcaption { text-align: center; color: #555; font-size: .9rem; }
+  img.fig { width: 100%; max-width: 820px; display: block; margin: 12px 0; }
   @media (max-width: 760px) { .row { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
   <h1>Monocular RGB-Based Forklift–Pallet Alignment</h1>
   <p class="sub">Real-world trials: 9 initial configurations × 3 trials. All 27 trials completed alignment and fork insertion.
-  The overhead camera is used only for evaluation. <a href="README.md">Repository README</a></p>
+  The overhead camera and the forklift AprilTag are used only for evaluation.
+  <a href="https://github.com/Anieyo0/forklift-pallet-alignment">Repository</a></p>
+  <img class="fig" src="assets/representative_initial_configs.jpg" alt="Representative initial configurations (S03, S06, S09)">
   <section id="S01">
-    <h2>S01 <span>Mild group · 3.0 m ahead, yaw 0° · lateral offset 0.0 m</span></h2>
+    <h2>S01 <span>Mild initial offset · 3.0 m ahead, yaw 0° · lateral offset 0.0 m</span></h2>
     <div class="row">
       <figure><video controls preload="none" poster="scenarios/S01/S01_A.jpg" src="scenarios/S01/S01_A_trajectory.mp4"></video><figcaption>Trial A</figcaption></figure>
       <figure><video controls preload="none" poster="scenarios/S01/S01_B.jpg" src="scenarios/S01/S01_B_trajectory.mp4"></video><figcaption>Trial B</figcaption></figure>
@@ -30,7 +33,7 @@
     </div>
   </section>
   <section id="S02">
-    <h2>S02 <span>Mild group · 3.2 m ahead, yaw +15° · lateral offset 0.9 m</span></h2>
+    <h2>S02 <span>Mild initial offset · 3.2 m ahead, yaw +15° · lateral offset 0.9 m</span></h2>
     <div class="row">
       <figure><video controls preload="none" poster="scenarios/S02/S02_A.jpg" src="scenarios/S02/S02_A_trajectory.mp4"></video><figcaption>Trial A</figcaption></figure>
       <figure><video controls preload="none" poster="scenarios/S02/S02_B.jpg" src="scenarios/S02/S02_B_trajectory.mp4"></video><figcaption>Trial B</figcaption></figure>
@@ -38,7 +41,7 @@
     </div>
   </section>
   <section id="S03">
-    <h2>S03 <span>Mild group · 3.5 m ahead, yaw -30° · lateral offset -2.0 m</span></h2>
+    <h2>S03 <span>Mild initial offset · 3.5 m ahead, yaw -30° · lateral offset -2.0 m</span></h2>
     <div class="row">
       <figure><video controls preload="none" poster="scenarios/S03/S03_A.jpg" src="scenarios/S03/S03_A_trajectory.mp4"></video><figcaption>Trial A</figcaption></figure>
       <figure><video controls preload="none" poster="scenarios/S03/S03_B.jpg" src="scenarios/S03/S03_B_trajectory.mp4"></video><figcaption>Trial B</figcaption></figure>
@@ -46,7 +49,7 @@
     </div>
   </section>
   <section id="S04">
-    <h2>S04 <span>Moderate group · 3.8 m ahead, yaw +30° · lateral offset 2.2 m</span></h2>
+    <h2>S04 <span>Moderate initial offset · 3.8 m ahead, yaw +30° · lateral offset 2.2 m</span></h2>
     <div class="row">
       <figure><video controls preload="none" poster="scenarios/S04/S04_A.jpg" src="scenarios/S04/S04_A_trajectory.mp4"></video><figcaption>Trial A</figcaption></figure>
       <figure><video controls preload="none" poster="scenarios/S04/S04_B.jpg" src="scenarios/S04/S04_B_trajectory.mp4"></video><figcaption>Trial B</figcaption></figure>
@@ -54,7 +57,7 @@
     </div>
   </section>
   <section id="S05">
-    <h2>S05 <span>Moderate group · 4.0 m ahead, yaw -30° · lateral offset -2.3 m</span></h2>
+    <h2>S05 <span>Moderate initial offset · 4.0 m ahead, yaw -30° · lateral offset -2.3 m</span></h2>
     <div class="row">
       <figure><video controls preload="none" poster="scenarios/S05/S05_A.jpg" src="scenarios/S05/S05_A_trajectory.mp4"></video><figcaption>Trial A</figcaption></figure>
       <figure><video controls preload="none" poster="scenarios/S05/S05_B.jpg" src="scenarios/S05/S05_B_trajectory.mp4"></video><figcaption>Trial B</figcaption></figure>
@@ -62,7 +65,7 @@
     </div>
   </section>
   <section id="S06">
-    <h2>S06 <span>Moderate group · 4.2 m ahead, yaw +40° · lateral offset 3.5 m</span></h2>
+    <h2>S06 <span>Moderate initial offset · 4.2 m ahead, yaw +40° · lateral offset 3.5 m</span></h2>
     <div class="row">
       <figure><video controls preload="none" poster="scenarios/S06/S06_A.jpg" src="scenarios/S06/S06_A_trajectory.mp4"></video><figcaption>Trial A</figcaption></figure>
       <figure><video controls preload="none" poster="scenarios/S06/S06_B.jpg" src="scenarios/S06/S06_B_trajectory.mp4"></video><figcaption>Trial B</figcaption></figure>
@@ -70,7 +73,7 @@
     </div>
   </section>
   <section id="S07">
-    <h2>S07 <span>Large group · 4.5 m ahead, yaw -40° · lateral offset -3.8 m</span></h2>
+    <h2>S07 <span>Large initial offset · 4.5 m ahead, yaw -40° · lateral offset -3.8 m</span></h2>
     <div class="row">
       <figure><video controls preload="none" poster="scenarios/S07/S07_A.jpg" src="scenarios/S07/S07_A_trajectory.mp4"></video><figcaption>Trial A</figcaption></figure>
       <figure><video controls preload="none" poster="scenarios/S07/S07_B.jpg" src="scenarios/S07/S07_B_trajectory.mp4"></video><figcaption>Trial B</figcaption></figure>
@@ -78,7 +81,7 @@
     </div>
   </section>
   <section id="S08">
-    <h2>S08 <span>Large group · 4.7 m ahead, yaw +40° · lateral offset 3.9 m</span></h2>
+    <h2>S08 <span>Large initial offset · 4.7 m ahead, yaw +40° · lateral offset 3.9 m</span></h2>
     <div class="row">
       <figure><video controls preload="none" poster="scenarios/S08/S08_A.jpg" src="scenarios/S08/S08_A_trajectory.mp4"></video><figcaption>Trial A</figcaption></figure>
       <figure><video controls preload="none" poster="scenarios/S08/S08_B.jpg" src="scenarios/S08/S08_B_trajectory.mp4"></video><figcaption>Trial B</figcaption></figure>
@@ -86,7 +89,7 @@
     </div>
   </section>
   <section id="S09">
-    <h2>S09 <span>Large group · 5.0 m ahead, yaw -40° · lateral offset -4.2 m</span></h2>
+    <h2>S09 <span>Large initial offset · 5.0 m ahead, yaw -40° · lateral offset -4.2 m</span></h2>
     <div class="row">
       <figure><video controls preload="none" poster="scenarios/S09/S09_A.jpg" src="scenarios/S09/S09_A_trajectory.mp4"></video><figcaption>Trial A</figcaption></figure>
       <figure><video controls preload="none" poster="scenarios/S09/S09_B.jpg" src="scenarios/S09/S09_B_trajectory.mp4"></video><figcaption>Trial B</figcaption></figure>
