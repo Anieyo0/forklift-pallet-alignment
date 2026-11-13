@@ -18,4 +18,4 @@ All three trials completed alignment and fork insertion. Thumbnails show the fir
 |---|---|---|
 | [<img src="S01_A.jpg" width="260">](S01_A_trajectory.mp4) | [<img src="S01_B.jpg" width="260">](S01_B_trajectory.mp4) | [<img src="S01_C.jpg" width="260">](S01_C_trajectory.mp4) |
 
-Each video shows the overhead top-view recording with the tracked forklift trajectory. The original recordings without overlay will be archived on Zenodo (see the main README).
+Each video shows the overhead top-view recording with the tracked forklift trajectory.

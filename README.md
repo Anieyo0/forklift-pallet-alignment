@@ -40,7 +40,6 @@ Thumbnails show the first frame of each video. Click a scenario for its page, or
 |  | [**S09**](scenarios/S09) | 5.0 | -40 | -4.2 | [<img src="scenarios/S09/S09_A.jpg" width="160">](scenarios/S09/S09_A_trajectory.mp4) | [<img src="scenarios/S09/S09_B.jpg" width="160">](scenarios/S09/S09_B_trajectory.mp4) | [<img src="scenarios/S09/S09_C.jpg" width="160">](scenarios/S09/S09_C_trajectory.mp4) |
 
 Each video shows the overhead top-view recording with the tracked forklift trajectory and a scenario label.
-The original recordings without overlay (`SXX_Y.mp4`) will be archived on Zenodo; the link will be added here.
 Audio tracks and file metadata were removed from all videos. People appearing in the videos consented to publication.
 
 ## Repository layout
