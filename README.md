@@ -1,14 +1,14 @@
 # Monocular RGB-Based Forklift–Pallet Alignment: Real-World Trial Videos
 
 This repository releases the videos and trial data of the real-world experiments in
-**"Monocular RGB-Based Forklift–Pallet Alignment via Visibility-Constrained Route Planning and Adaptive Motion Timing"** (under review).
+**"Monocular RGB-Based Forklift–Pallet Alignment via Visibility-Constrained Route Planning and Adaptive Motion Timing"** (manuscript in preparation).
 
 The forklift aligns to the pallet and inserts its forks using **a single RGB camera** (no depth sensor, no LiDAR).
 An overhead top-view camera and an AprilTag on the forklift were used **only for evaluation**; they are not inputs to the controller.
 
 - 9 initial pallet configurations (S01–S09) × 3 trials (A, B, C) = 27 trials
 - All 27 trials completed alignment and fork insertion
-- Watch all videos in the browser: PAGES_URL
+- Watch all videos in the browser: https://anieyo0.github.io/forklift-pallet-alignment/
 
 ## Scenarios
 
