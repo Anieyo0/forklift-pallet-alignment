@@ -1,0 +1,10 @@
+scenario,group,d_forward_m,pallet_yaw_deg,lateral_offset_m
+S01,Mild,3.0,0,0.0
+S02,Mild,3.2,15,0.9
+S03,Mild,3.5,-30,-2.0
+S04,Moderate,3.8,30,2.2
+S05,Moderate,4.0,-30,-2.3
+S06,Moderate,4.2,40,3.5
+S07,Large,4.5,-40,-3.8
+S08,Large,4.7,40,3.9
+S09,Large,5.0,-40,-4.2
