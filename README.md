@@ -22,7 +22,7 @@ are used **only for evaluation**; they are not inputs to the controller.
 <img src="assets/representative_initial_configs.jpg" width="820">
 
 Representative initial configurations of the three groups (S03, S06, S09).
-In every scenario the pallet front center is placed on the camera forward axis. d<sub>forward</sub> is the forward distance from the camera to the pallet front, ψ is the pallet yaw relative to the camera forward axis, and δ<sub>0</sub> = d<sub>forward</sub> tan ψ is the lateral offset of the camera from the pallet insertion axis.
+In every scenario the pallet front center is placed on the camera forward axis. d<sub>forward</sub> is the forward distance from the camera to the pallet front, ψ is the pallet yaw, the angle between the fork insertion direction and the camera forward axis (clockwise positive, viewed from above), and δ<sub>0</sub> = d<sub>forward</sub> tan ψ is the lateral offset of the camera from the pallet insertion axis.
 Scenarios are grouped into Mild, Moderate and Large by the size of the initial offset.
 
 Thumbnails show the first frame of each video. Click a scenario for its page, or a thumbnail to open the video.

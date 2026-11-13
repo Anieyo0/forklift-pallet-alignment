@@ -8,7 +8,7 @@
 |---|---|---|
 | 4.5 | -40 | -3.8 |
 
-The pallet front center is placed on the camera forward axis. d<sub>forward</sub> is the forward distance from the camera to the pallet front, ψ is the pallet yaw relative to the camera forward axis, and δ<sub>0</sub> = d<sub>forward</sub> tan ψ is the lateral offset of the camera from the pallet insertion axis.
+The pallet front center is placed on the camera forward axis. d<sub>forward</sub> is the forward distance from the camera to the pallet front, ψ is the pallet yaw, the angle between the fork insertion direction and the camera forward axis (clockwise positive, viewed from above), and δ<sub>0</sub> = d<sub>forward</sub> tan ψ is the lateral offset of the camera from the pallet insertion axis.
 
 ## Trials
 
