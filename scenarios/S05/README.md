@@ -1,4 +1,4 @@
-# S05 — Moderate initial offset
+# S05 — Medium initial offset
 
 [← All scenarios](../../README.md)
 
