@@ -1,7 +1,7 @@
-# Forklift–Pallet Alignment Using Only a Single RGB Camera: Real-World Trial Videos
+# Forklift–Pallet Alignment With Monocular Pallet Pose Feedback: Real-World Trial Videos
 
 This repository releases the videos of the real-world experiments in
-**"Forklift–Pallet Alignment Using Only a Single RGB Camera"** (manuscript in preparation).
+**"Forklift–Pallet Alignment With Monocular Pallet Pose Feedback"**.
 
 The forklift aligns to the pallet and inserts its forks using only the RGB stream of a single front camera.
 No depth data, LiDAR, or sensor measuring the forklift's own position or velocity is used.
@@ -76,13 +76,13 @@ You may share and adapt them for any purpose, provided you give appropriate cred
 
 ## Citation
 
-The paper is in preparation; its citation will be added here after publication.
+The citation of the paper will be added here after publication.
 Until then, please cite this repository:
 
 ```bibtex
 @misc{kim2026forkliftvideos,
   author       = {Kim, Jihoon and Jang, Doyoung and Kim, Minjae and Lee, Soonkyo and Lee, Sangmin},
-  title        = {Forklift--Pallet Alignment Using Only a Single {RGB} Camera: Real-World Trial Videos},
+  title        = {Forklift--Pallet Alignment With Monocular Pallet Pose Feedback: Real-World Trial Videos},
   year         = {2026},
   howpublished = {\url{https://github.com/Anieyo0/forklift-pallet-alignment}}
 }
