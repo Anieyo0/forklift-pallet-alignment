@@ -10,6 +10,22 @@ No depth data, LiDAR, or sensor measuring the forklift's own position or velocit
 - All 27 trials completed alignment and fork insertion
 - Watch all videos in the browser: https://anieyo0.github.io/forklift-pallet-alignment/
 
+## Proposed method: fine alignment
+
+[<img src="assets/fine_alignment.gif" width="820" alt="Animation of the proposed fine-alignment loop: plan, execute, re-observe, replan">](assets/fine_alignment.mp4)
+
+*Illustrative example of the fine-alignment stage of the proposed method (schematic, not recorded data). Left: search tree. Right: top view. Click the animation for the high-resolution MP4.*
+
+Fine alignment runs as a receding-horizon loop. Each cycle has four steps:
+
+1. **Plan**: from the current pose **x**, search a tree of discrete motions and select the route r\* with the shortest predicted time. Every searched motion keeps the pallet in the camera field of view.
+2. **Execute**: execute only the first motion of r\*.
+3. **Re-observe**: stop and re-estimate the pose from the single RGB camera. The motion measured in this step updates the motion-time model.
+4. **Replan**: discard the rest of the tree and search again from the observed pose.
+
+Because the route is replanned from every observed pose, execution errors do not accumulate during alignment.
+At the end, the forklift turns in place, the insertion check is passed, and the forks are inserted in one forward motion.
+
 ## Experimental setup
 
 <img src="assets/experimental_setup.jpg" width="820">
@@ -47,7 +63,7 @@ Audio tracks and file metadata were removed from all videos. People appearing in
 | Path | Content |
 |---|---|
 | `scenarios/SXX/` | Scenario page (`README.md`), the three trial videos (`SXX_Y_trajectory.mp4`, H.264) and their thumbnails |
-| `assets/` | Figures used in this README |
+| `assets/` | Figures used in this README and the fine-alignment animation (`fine_alignment.gif`, `fine_alignment.mp4`) |
 | `index.html` | Video page served by GitHub Pages |
 | `LICENSE` | CC BY 4.0 license text |
 | `CITATION.cff` | Citation metadata (used by GitHub's "Cite this repository") |

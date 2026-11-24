@@ -15,6 +15,10 @@
   video { width: 100%; background: #000; border-radius: 4px; }
   figcaption { text-align: center; color: #555; font-size: .9rem; }
   img.fig { width: 100%; max-width: 820px; display: block; margin: 12px 0; }
+  .method { display: grid; grid-template-columns: 1fr; gap: 6px; margin: 8px 0 18px; }
+  .method video { max-width: 1000px; background: #fff; border: 1px solid #ddd; }
+  .method ol { margin: 4px 0; padding-left: 1.4rem; max-width: 1000px; }
+  .method p { margin: 4px 0; max-width: 1000px; }
   @media (max-width: 760px) { .row { grid-template-columns: 1fr; } }
 </style>
 </head>
@@ -23,6 +27,22 @@
   <p class="sub">Real-world trials: 9 initial configurations × 3 trials. All 27 trials completed alignment and fork insertion.
   The overhead camera and the forklift AprilTag are used only for evaluation.
   <a href="https://github.com/Anieyo0/forklift-pallet-alignment">Repository</a></p>
+  <section id="method">
+    <h2>Proposed method: fine alignment <span>illustrative example (schematic, not recorded data)</span></h2>
+    <div class="method">
+      <video autoplay loop muted playsinline poster="assets/fine_alignment_poster.jpg" src="assets/fine_alignment.mp4"></video>
+      <p class="sub">Left: search tree. Right: top view.</p>
+      <p>Fine alignment runs as a receding-horizon loop. Each cycle has four steps:</p>
+      <ol>
+        <li><b>Plan</b>: from the current pose <b>x</b>, search a tree of discrete motions and select the route r* with the shortest predicted time. Every searched motion keeps the pallet in the camera field of view.</li>
+        <li><b>Execute</b>: execute only the first motion of r*.</li>
+        <li><b>Re-observe</b>: stop and re-estimate the pose from the single RGB camera. The motion measured in this step updates the motion-time model.</li>
+        <li><b>Replan</b>: discard the rest of the tree and search again from the observed pose.</li>
+      </ol>
+      <p>Because the route is replanned from every observed pose, execution errors do not accumulate during alignment. At the end, the forklift turns in place, the insertion check is passed, and the forks are inserted in one forward motion.</p>
+    </div>
+  </section>
+  <h2>Real-world trials</h2>
   <img class="fig" src="assets/representative_initial_configs.jpg" alt="Representative initial configurations (S03, S06, S09)">
   <p class="sub">Distances are measured from the forklift's rotation center c, the center of the tracked base, which lies 0.68 m behind the camera. d<sub>lateral</sub> is the perpendicular distance from c to the pallet insertion axis (the line through the pallet front center along the fork insertion direction); it is positive when c is to the right of the axis, facing the insertion direction. d<sub>forward</sub> is the distance from c to the pallet front, measured along the insertion axis. ψ is the pallet yaw, the angle between the fork insertion direction and the camera forward axis (clockwise positive, viewed from above). When d<sub>lateral</sub> = 0 and ψ = 0, the forklift centerline lies on the insertion axis. Distances are rounded to 0.1 m.</p>
   <section id="S01">
