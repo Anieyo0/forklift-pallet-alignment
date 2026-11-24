@@ -32,14 +32,13 @@
     <div class="method">
       <video autoplay loop muted playsinline poster="assets/fine_alignment_poster.jpg" src="assets/fine_alignment.mp4"></video>
       <p class="sub">Left: search tree. Right: top view.</p>
-      <p>Fine alignment runs as a receding-horizon loop. Each cycle has four steps:</p>
+      <p>Fine alignment runs as a receding-horizon loop. Each cycle has three steps, and the loop then returns to Plan:</p>
       <ol>
         <li><b>Plan</b>: from the current pose <b>x</b>, search a tree of discrete motions and select the route r* with the shortest predicted time. Every searched motion keeps the pallet in the camera field of view.</li>
         <li><b>Execute</b>: execute only the first motion of r*.</li>
-        <li><b>Re-observe</b>: stop and re-estimate the pose from the single RGB camera. The motion measured in this step updates the motion-time model.</li>
-        <li><b>Replan</b>: discard the rest of the tree and search again from the observed pose.</li>
+        <li><b>Observe</b>: stop and re-estimate the pose from the single RGB camera. The motion measured in this step updates the motion-time model.</li>
       </ol>
-      <p>Because the route is replanned from every observed pose, execution errors do not accumulate during alignment. At the end, the forklift turns in place, the insertion check is passed, and the forks are inserted in one forward motion.</p>
+      <p>The next Plan discards the rest of the tree and searches again from the observed pose, so the execution error of each motion is corrected after the next observation. At the end, the forklift turns in place, the insertion check is passed, and the forks are inserted in one forward motion.</p>
     </div>
   </section>
   <h2>Real-world trials</h2>
