@@ -20,7 +20,7 @@ Fine alignment runs as a receding-horizon loop. Each cycle has three steps, and 
 
 1. **Plan**: from the current pose **x**, search a tree of discrete motions and select the route r\* with the shortest predicted time. Every searched motion keeps the pallet in the camera field of view.
 2. **Execute**: execute only the first motion of r\*.
-3. **Observe**: stop and re-estimate the pose from the single RGB camera. The motion measured in this step updates the motion-time model.
+3. **Observe**: stop and re-estimate the pose from the single RGB camera. The motion measured in this step updates the drive-time model.
 
 The next Plan discards the rest of the tree and searches again from the observed pose, so the execution error of each motion is corrected after the next observation.
 At the end, the forklift turns in place, the insertion check is passed, and the forks are inserted in one forward motion.

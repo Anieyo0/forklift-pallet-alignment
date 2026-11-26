@@ -36,7 +36,7 @@
       <ol>
         <li><b>Plan</b>: from the current pose <b>x</b>, search a tree of discrete motions and select the route r* with the shortest predicted time. Every searched motion keeps the pallet in the camera field of view.</li>
         <li><b>Execute</b>: execute only the first motion of r*.</li>
-        <li><b>Observe</b>: stop and re-estimate the pose from the single RGB camera. The motion measured in this step updates the motion-time model.</li>
+        <li><b>Observe</b>: stop and re-estimate the pose from the single RGB camera. The motion measured in this step updates the drive-time model.</li>
       </ol>
       <p>The next Plan discards the rest of the tree and searches again from the observed pose, so the execution error of each motion is corrected after the next observation. At the end, the forklift turns in place, the insertion check is passed, and the forks are inserted in one forward motion.</p>
     </div>
